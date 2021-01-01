@@ -3,7 +3,7 @@ import json
 import time
 from datetime import datetime
 import requests
-import creation
+
 
 
 
@@ -108,7 +108,6 @@ class dataStore:
             fields = line.split("-")
             key = fields[0]
             value = fields[1]
-
             if str(key).strip(" ") == read_file:
                 timestamp = line.split("+")
                 key2 = timestamp[1]
